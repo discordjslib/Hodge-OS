@@ -1,0 +1,181 @@
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, "Helvetica Neue", sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 95vh;
+    background-color: #f8f8f8; /* iOS background color */
+    padding: 20px;
+}
+h1#time{
+    font-size: 100px;
+    height: 100px; /* Adjust the height to your preference */
+    color: #333;
+    margin: 0;
+    margin-bottom: 25px; /* Add a margin-bottom to create space between time and icons */
+}
+
+h2#date {
+    font-size: 20px;
+    height: 100px; /* Adjust the height to your preference */
+    color: #333;
+    margin: 0;
+    margin-bottom: 1px; /* Add a margin-bottom to create space between time and icons */
+}
+
+.icons-container {
+    display: flex; /* Set display to flex for horizontal alignment */
+    flex-wrap: wrap; /* Allow icons to wrap to the next line if necessary */
+    gap: 20px; /* Adjust the gap between icons */
+    justify-content: center; /* Center the icons horizontally */
+   
+}
+
+.icon {
+    text-align: center;
+    cursor: pointer;
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px; /* Slightly rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.icon img {
+    width: 80px; /* Slightly smaller icons */
+    height: 80px;
+}
+
+.icon p {
+    margin-top: 10px;
+    font-size: 12px; /* Slightly smaller font size */
+    color: #666; /* Lighter text color */
+}
+.music-player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.player-controls {
+    display: flex;
+    gap: 20px;
+}
+
+.song-info {
+    margin-top: 10px;
+}
+
+.music-player .icon {
+    width: 40px; /* Adjust the size of the music player icons */
+    height: 40px;
+}
+
+/* Add specific styles for play/pause, next track, and volume icons if needed */
+
+/* Example styles for play/pause button */
+.play-pause-btn img,
+.next-track-btn img,
+.volume-control img {
+    max-width: 100%; /* Set a maximum width for the images */
+    max-height: 100%; /* Set a maximum height for the images */
+}
+
+.progress-bar {
+    width: 15%; /* Set the width of the progress bar */
+    height: 10px; /* Set the height of the progress bar */
+    background-color: #ddd; /* Set the background color of the progress bar container */
+    margin-top: 10px; /* Adjust the margin from the music player */
+    border-radius: 5px; /* Add rounded corners to the progress bar */
+}
+
+.progress {
+    height: 100%; /* Set the height to 100% to fill the container vertically */
+    background-color: #2980b9; /* Set the color of the progress bar */
+    border-radius: 5px; /* Add rounded corners to the progress bar */
+    width: 20%; /* Initially set the width to 0% */
+}
+.user-info-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.user-info {
+    font-size: 14px;
+    color: #666;
+    margin-right: 10px; /* Add some space between user info and logout button */
+}
+
+#logoutBtn {
+    background-color: #007AFF; /* iOS blue color */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#logoutBtn:hover {
+    background-color: #007AFF; /* Slightly darker blue on hover */
+}
+.fullscreen-popup {
+    position: fixed;
+    top: 80px;
+    left: 15px;
+    width: 11%;
+    padding: 15px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    display: none;
+    z-index: 999; /* Ensure the popup appears above other elements */
+}
+
+.fullscreen-popup p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.fullscreen-popup button {
+    background-color: #007AFF; /* iOS blue color */
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.fullscreen-popup button:hover {
+    background-color: #0056b3; /* Slightly darker blue on hover */
+}
+.appLibrary {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 999; /* Ensure the button stays on top */
+}
+
+.appLibrary-btn {
+    position: relative;
+    padding: 8px;
+    box-sizing: border-box;
+    background-color: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    background: #007AFF;
+}
+
+.appLibrary-btn img {
+    width: 30px; /* Adjust the size of the app store icon */
+    height: 30px;
+}

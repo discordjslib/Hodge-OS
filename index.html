@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <script src="index.js"></script>
+  <title>Hodge</title>
+</head>
+
+<body>
+  <div class="fullscreen-popup" id="fullscreenPopup">
+    <p> Enhance your experience!</p>
+    <p>Press <strong>F11</strong> for full-screen mode.<P>
+    <button onclick="closeFullscreenPopup()">Got it!</button>
+  </div>
+
+  <div class="user-info-container">
+    <p class="user-info" id ='name'></p>
+    <button id="logoutBtn">Logout</button>
+  </div>
+  <h1 id="time"></h1>
+  <h2 id='dateText'>Saturday, 17 February</h2id>
+  </h2>
+  <div class="icons-container">
+    <div class="icon" id="messageIcon">
+      <img src="./Images/message.png" alt="Message Icon">
+    </div>
+    <div class="icon" id="contactsIcon">
+      <img src="./Images/contacts.png" alt="Settings Icon">
+    </div>
+    <div class="icon" id="emailIcon">
+      <img src="./Images/email.png" alt="Settings Icon">
+    </div>
+    <div class="icon" id="googleIcon">
+      <img src="./Images/google.png" alt="Google Icon">
+    </div>
+    <div class="icon" id="clockIcon">
+      <img src="./Images/clock.png" alt="Email Icon">
+    </div>
+
+    <div class="icon" id="settingsIcon">
+      <img src="./Images/spotify.png" alt="Settings Icon">
+    </div>
+  </div>
+  <script>
+    function goToHomePage() {
+        window.location.href = './Public/Library/library.html';
+    }
+</script>
+  <div class="appLibrary">
+    <button class="appLibrary-btn"  onclick="goToHomePage()">
+        <img src="../../Images/library.png" alt="Icon">
+        <span></span>
+        
+    </button>
+  </div>
+
+  <div class="music-player">
+    <div class="player-controls">
+      <div class="play-pause-btn icon">
+        <img src="./Images/play.png" alt="Play Icon">
+      </div>
+      <div class="next-track-btn icon">
+        <img src="./Images/next.png" alt="Next Track Icon">
+      </div>
+      <div class="volume-control icon">
+        <img src="./Images/volume.png" alt="Volume Icon">
+      </div>
+    </div>
+    <div class="song-info">
+      <p>Congratulations - Mac Miller</p>
+    </div>
+  </div>
+  <div class="progress-bar">
+    <div class="progress"></div>
+  </div>
+</body>
+
+</html>

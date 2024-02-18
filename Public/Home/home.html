@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css"> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hodge</title>
+  <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+</head>
+<body>
+  <body>
+    <script>
+      function goToHomePage() {
+          window.location.href = 'http://127.0.0.1:5500/index.html';
+      }
+  </script>
+    <div class="back">
+      <button class="icon-btn"  onclick="goToHomePage()">
+          <img src="../../Images/goBack.png" alt="Icon">
+          <span></span>
+          
+      </button>
+    </div>
+  </body>
+  
+<div class="container">
+  <div class="sidebar">
+    <input type="text" placeholder="Search users" id="userSearchInput">
+    <button id="searchButton" type="button">Search</button>
+  </div>
+  <div class="chat-container">
+    <div class="imessage">
+      <div class="message-container">
+      </div>
+    </div>
+  
+    <div class="input-container">
+      <textarea id="messageInput" placeholder="|"></textarea>
+      <button id="sendButton" type="button">Send</button>
+    </div>
+  </div>
+</div>
+
+<script src="./home.js"></script>
+<script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+
+</body>
+</html>

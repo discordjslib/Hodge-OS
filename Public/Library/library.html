@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Hodge</title>
+</head>
+
+<body>
+  <div class="back">
+    <button class="icon-btn" onclick="goToHomePage()">
+      <img src="../../Images/goBack.png" alt="Icon">
+      <span></span>
+    </button>
+  </div>
+  <h1 id="time"></h1>
+  <h2 id='dateText'>App Library</h2>
+  <div class="search-bar-container">
+    <div class="search-bar">
+      <img src="../../Images/search.png" alt="Search Icon" class="search-icon">
+      <input type="text" id="searchInput" placeholder="Search for apps...">
+    </div>
+  </div>
+
+  <div class="user-info-container">
+    <p class="user-info">Logged In as Sam Hodge</p>
+    <button id="logoutBtn">Logout</button>
+  </div>
+
+  <!-- App icons container with scrollbar -->
+  <div class="icons-container" id="iconsContainer">
+    <!-- Example app icons, you can replace these with your actual icons -->
+    <!-- ... app icons ... -->
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
